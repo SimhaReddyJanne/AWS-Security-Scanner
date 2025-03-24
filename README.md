@@ -1,2 +1,25 @@
-# AWS-Security-Scanner
-An automated security audit tool that scans IAM users and S3 bucket configurations for security risks. It lists IAM users, detects those without MFA, retrieves S3 buckets, and identifies public ones. Results are stored in S3. Built using AWS Lambda, Python (Boto3), and IAM Policies to enhance cloud security automation.
+# AWS Security Scanner 🔐
+
+An automated security audit tool that scans AWS IAM users and S3 bucket configurations for potential security risks.
+
+This tool:
+- Lists IAM users
+- Detects users without MFA
+- Retrieves all S3 buckets
+- Identifies public S3 buckets
+- Optionally uploads the scan report to S3
+
+Built with:
+- **AWS Lambda**
+- **Python** using the `boto3` SDK
+- **IAM policies** for least-privilege access
+- **JSON** formatted reports
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/SimhaReddyJanne/AWS-Security-Scanner.git
+cd AWS-Security-Scanner
+pip install -r requirements.txt
